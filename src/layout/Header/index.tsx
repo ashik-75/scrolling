@@ -13,7 +13,7 @@ function Header() {
 
           <ul>
             <li>
-              <Link to={"/dashboard"}>Dahboard</Link>
+              <Link to={"/"}>Dahboard</Link>
             </li>
           </ul>
         </div>
