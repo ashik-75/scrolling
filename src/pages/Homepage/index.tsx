@@ -1,6 +1,5 @@
 import Cards from "./Cards";
-import Filter from "./Filter";
-import Maps from "./Maps";
+import Filter from "./filters";
 
 function Homepage() {
   return (
@@ -8,7 +7,8 @@ function Homepage() {
       <Filter />
       <div className="grid grid-cols-2 gap-5">
         <Cards />
-        <Maps />
+        {/* <Maps /> */}
+        <div>Maps</div>
       </div>
     </div>
   );
