@@ -3,6 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // react-slick css code
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import App from "./App";

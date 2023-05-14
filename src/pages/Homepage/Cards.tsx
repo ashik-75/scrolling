@@ -1,9 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
+import { useSearchParams } from "react-router-dom";
 import { LoadingSpinner } from "../../components/Loader";
 import { getProperties } from "../../services/property.services";
 import Card from "./Card";
 
 function Cards() {
+  const [searchParams] = useSearchParams();
+
   const {
     data: properties,
     isLoading,
@@ -22,8 +25,6 @@ function Cards() {
     // @ts-expect-error
     return <div>{error.message}</div>;
   }
-
-  console.log(properties);
 
   return (
     <div>
