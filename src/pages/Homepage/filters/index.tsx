@@ -62,6 +62,22 @@ function Filter() {
     setSearchParams(`?${query}`);
   };
 
+  const handleReset = () => {
+    setQueryData({
+      location: "",
+      date: [
+        {
+          startDate: new Date(),
+          endDate: new Date(),
+          key: "selection",
+        },
+      ],
+      guest: 1,
+      price: 0,
+      title: "",
+    });
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex items-start">
@@ -109,7 +125,9 @@ function Filter() {
           />
         </div>
 
-        <button className="rounded bg-gray-100 px-4 py-1">Start Over</button>
+        <button className="rounded bg-gray-100 px-4 py-1" onClick={handleReset}>
+          Start Over
+        </button>
 
         <button
           type="submit"
