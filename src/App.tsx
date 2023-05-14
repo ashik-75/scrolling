@@ -4,7 +4,11 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+// Layout
 import RootLayout from "./layout/RootLayout";
+
+// Pages
 import Homepage from "./pages/Homepage";
 
 function App() {

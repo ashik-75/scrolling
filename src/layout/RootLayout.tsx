@@ -6,7 +6,7 @@ function RootLayout() {
   return (
     <div>
       <Header />
-      <main className="min-h-[80vh]">
+      <main className="mx-auto min-h-[calc(100vh-128px)] max-w-7xl p-5">
         <Outlet />
       </main>
 
