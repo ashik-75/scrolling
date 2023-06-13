@@ -1,6 +1,6 @@
 export function LoadingPage({ size }: { size?: number }) {
   return (
-    <div className="absolute left-0 top-0 flex h-screen w-screen items-center justify-center bg-white">
+    <div className="absolute left-0 top-0 flex h-screen w-screen items-center justify-center bg-zinc-900/50">
       <div role="status">
         <svg
           aria-hidden="true"

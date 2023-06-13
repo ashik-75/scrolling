@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 
 // Layout
-import RootLayout from "./layout/RootLayout";
+import RootLayout from "./components/layout/RootLayout";
+import Homepage from "./pages/Homepage";
 
 // Pages
-import Homepage from "./pages/Homepage";
 
 function App() {
   const router = createBrowserRouter(
